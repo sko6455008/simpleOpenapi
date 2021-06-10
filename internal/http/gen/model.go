@@ -23,6 +23,19 @@ type Pet struct {
 	Id int64 `json:"id"`
 }
 
+// FindBooksParams defines parameters for FindBooks.
+type FindBooksParams struct {
+
+	// tags to filter by
+	Tags *[]string `json:"tags,omitempty"`
+
+	// maximum number of results to return
+	Limit *int32 `json:"limit,omitempty"`
+}
+
+// AddBookJSONBody defines parameters for AddBook.
+type AddBookJSONBody NewPet
+
 // FindPetsParams defines parameters for FindPets.
 type FindPetsParams struct {
 
@@ -35,6 +48,9 @@ type FindPetsParams struct {
 
 // AddPetJSONBody defines parameters for AddPet.
 type AddPetJSONBody NewPet
+
+// AddBookJSONRequestBody defines body for AddBook for application/json ContentType.
+type AddBookJSONRequestBody AddBookJSONBody
 
 // AddPetJSONRequestBody defines body for AddPet for application/json ContentType.
 type AddPetJSONRequestBody AddPetJSONBody
