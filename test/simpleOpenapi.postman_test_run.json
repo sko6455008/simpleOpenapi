@@ -1,0 +1,154 @@
+{
+	"id": "a6119a7b-2bde-457e-a379-8258c423a33e",
+	"name": "simpleOpenapi",
+	"timestamp": "2021-06-10T05:04:55.473Z",
+	"collection_id": "026e0dd9-3e55-4914-848d-8bd8e77ebe4c",
+	"folder_id": "d73d3618-421c-4c32-992b-b4d588f87ec0",
+	"environment_id": "0",
+	"totalPass": 6,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "cffaa357-3acb-4599-9fd1-25123934d56c",
+			"name": "create",
+			"url": "http://localhost:1232/books",
+			"time": 98,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code": true,
+				"user check": true
+			},
+			"testPassFailCounts": {
+				"Status code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"user check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Status code": true,
+					"user check": true
+				}
+			]
+		},
+		{
+			"id": "767cfce7-d6de-4b24-a582-ab2467c25b4a",
+			"name": "get",
+			"url": "http://localhost:1232/books/1000",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "d1a28858-22c9-4515-9d04-a6cf4e669763",
+			"name": "getall",
+			"url": "http://localhost:1232/books",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code": true
+			},
+			"testPassFailCounts": {
+				"Status code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code": true
+				}
+			]
+		},
+		{
+			"id": "27adadd9-34e5-47ee-b98b-4f48a6a17f62",
+			"name": "delete",
+			"url": "http://localhost:1232/books/1000",
+			"time": 5,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code": true
+			},
+			"testPassFailCounts": {
+				"Status code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 112,
+	"collection": {
+		"requests": [
+			{
+				"id": "cffaa357-3acb-4599-9fd1-25123934d56c",
+				"method": "POST"
+			},
+			{
+				"id": "767cfce7-d6de-4b24-a582-ab2467c25b4a",
+				"method": "GET"
+			},
+			{
+				"id": "d1a28858-22c9-4515-9d04-a6cf4e669763",
+				"method": "GET"
+			},
+			{
+				"id": "27adadd9-34e5-47ee-b98b-4f48a6a17f62",
+				"method": "DELETE"
+			}
+		]
+	}
+}
